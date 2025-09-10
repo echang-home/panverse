@@ -1,0 +1,319 @@
+# Campaign Generator - Cursor Rules
+# Development Philosophy and Coding Standards
+
+## 🎯 **CORE PRINCIPLES**
+
+### **1. Always Fix the Real Problem**
+- NEVER avoid problems with tests or workarounds
+- NEVER implement fallback modes or mock responses
+- NEVER simulate API calls or database connections
+- If something is broken, fix it properly - no band-aids
+
+### **2. SOLID Architecture Enforcement**
+- **Single Responsibility**: Each class/function has one clear purpose
+- **Open/Closed**: Open for extension, closed for modification
+- **Liskov Substitution**: Subtypes are substitutable for their base types
+- **Interface Segregation**: Clients depend only on methods they use
+- **Dependency Inversion**: Depend on abstractions, not concretions
+
+### **3. Clean Domain-Driven Design**
+- **Domain Layer**: Pure business logic, no infrastructure dependencies
+- **Application Layer**: Use cases and orchestration
+- **Infrastructure Layer**: External concerns (DB, APIs, etc.)
+- **Presentation Layer**: API controllers and DTOs
+
+### **4. AI Integrity - NO EXCEPTIONS**
+- 🚫 **MOCK CODE PROHIBITED**: No mock AI clients, no simulated responses
+- 🚫 **FALLBACKS FORBIDDEN**: No fallback content, no default templates
+- 🚫 **SIMULATION BLOCKED**: No fake API calls, no test doubles for AI
+- ✅ **LIVE API ONLY**: All AI interactions must use real Claude API calls
+
+### **5. Code Quality Standards**
+- **Python Naming**: snake_case for files/variables, PascalCase for classes
+- **File Organization**: domain/, application/, infrastructure/, tests/
+- **Import Order**: Standard library, third-party, local imports
+- **Documentation**: Type hints, docstrings, comments for complex logic
+
+## 🏗️ **ARCHITECTURAL RULES**
+
+### **Domain Layer Rules**
+```
+domain/
+├── entities/           # Business entities (Campaign, NPC, etc.)
+├── value_objects/      # Immutable value objects (Theme, Difficulty)
+├── services/           # Domain services (business logic)
+└── repositories/       # Repository interfaces (abstract)
+```
+
+### **Application Layer Rules**
+```
+application/
+├── services/           # Application services (orchestration)
+├── dto/               # Data Transfer Objects
+├── events/            # Domain events
+└── handlers/          # Event/command handlers
+```
+
+### **Infrastructure Layer Rules**
+```
+infrastructure/
+├── ai/                # AI service implementations
+├── persistence/       # Database implementations
+├── external/          # External API clients
+└── config/            # Configuration management
+```
+
+### **Watchdog Integration Rules**
+```
+watchdog/
+├── core/              # Core watchdog engine
+├── checks/            # Individual check implementations
+├── config/            # Policy configuration
+└── scripts/           # CI/CD integration scripts
+```
+
+## 🔧 **CODING STANDARDS**
+
+### **File Naming Conventions**
+- ✅ `campaign_generator.py` (snake_case)
+- ✅ `campaign.py`, `npc.py` (snake_case)
+- ✅ `CampaignGenerator` (PascalCase class)
+- ✅ `PlayerPreferences` (PascalCase class)
+- ❌ `campaign-generator.py` (dashes forbidden)
+- ❌ `Campaign_Generator` (underscores in class names)
+
+### **Import Organization**
+```python
+# 1. Standard library imports
+import asyncio
+import json
+from typing import Dict, List, Optional
+from datetime import datetime
+
+# 2. Third-party imports
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+import anthropic
+
+# 3. Local imports (relative)
+from domain.entities.campaign import Campaign
+from domain.services.campaign_generator import CampaignGeneratorService
+from infrastructure.ai.claude_client import ClaudeClient
+```
+
+### **Error Handling**
+- Use custom exceptions for domain errors
+- Never catch generic Exception
+- Log errors with appropriate context
+- Return meaningful error messages to clients
+
+### **Async/Await Usage**
+- All I/O operations must be async
+- AI API calls must be async
+- Database operations must be async
+- Use proper async context managers
+
+## 🔒 **AI INTEGRITY RULES**
+
+### **Claude API Integration**
+```python
+# ✅ CORRECT: Live API call only
+async def generate_campaign(self, preferences: PlayerPreferences) -> Campaign:
+    prompt = self.prompt_manager.build_campaign_prompt(preferences)
+    response = await self.claude_client.generate(prompt)  # Live API call
+    return self.parse_response(response)
+
+# ❌ FORBIDDEN: Mock or fallback
+async def generate_campaign_BAD(self, preferences: PlayerPreferences) -> Campaign:
+    try:
+        response = await self.claude_client.generate(prompt)  # Live call
+    except Exception:
+        return self.fallback_campaign  # 🚫 FORBIDDEN
+```
+
+### **No Hardcoded Prompts**
+```python
+# ✅ CORRECT: Prompts in separate files
+class PromptManager:
+    def build_campaign_prompt(self, preferences: PlayerPreferences) -> str:
+        template = self.load_template("campaign_generation")
+        return template.format(**preferences.__dict__)
+
+# ❌ FORBIDDEN: Hardcoded prompts in code
+CAMPAIGN_PROMPT = """
+You are a D&D campaign designer...
+"""  # 🚫 FORBIDDEN
+```
+
+### **Content Validation**
+- All generated content must be validated
+- Quality scores must be calculated
+- Content below threshold must be regenerated (no fallback)
+- Validation results must be logged
+
+## 🧪 **TESTING RULES**
+
+### **Test Organization**
+```
+tests/
+├── unit/              # Unit tests for individual functions
+├── integration/       # Integration tests for services
+├── e2e/              # End-to-end API tests
+└── fixtures/         # Test data and mocks (limited)
+```
+
+### **Test Philosophy**
+- **No Mock AI Calls**: Tests should use real AI calls when possible
+- **Contract Testing**: Test against AI service contracts
+- **Quality Gates**: Tests must pass watchdog validation
+- **Real Data**: Use real test data, not fabricated
+
+### **Test Coverage Requirements**
+- **Domain Layer**: 100% coverage required
+- **Application Layer**: 95% coverage required
+- **Infrastructure Layer**: 90% coverage required
+- **Watchdog Checks**: 100% coverage required
+
+## 📊 **QUALITY METRICS**
+
+### **Code Quality**
+- **Cyclomatic Complexity**: < 10 per function
+- **Function Length**: < 50 lines
+- **Class Length**: < 200 lines
+- **Import Count**: < 20 per file
+
+### **Performance**
+- **API Response Time**: < 500ms (p95)
+- **AI Generation Time**: < 30 seconds
+- **Database Query Time**: < 100ms
+- **Memory Usage**: < 512MB per instance
+
+### **Reliability**
+- **Uptime**: > 99.9%
+- **Error Rate**: < 0.1%
+- **AI Success Rate**: > 95%
+- **Content Quality Score**: > 0.85
+
+## 🚨 **WATCHDOG ENFORCEMENT**
+
+### **Critical Violations (Terminate Process)**
+- Mock AI clients detected
+- Fallback content usage
+- Hardcoded AI prompts
+- Architecture violations
+
+### **High Priority Violations (Block Commits)**
+- Code quality issues
+- Missing type hints
+- Import organization problems
+- Naming convention violations
+
+### **Medium Priority Violations (Warnings)**
+- Performance issues
+- Code duplication
+- Missing documentation
+- Test coverage gaps
+
+### **Low Priority Violations (Info)**
+- Code style issues
+- Minor optimization opportunities
+
+## 🔄 **CI/CD INTEGRATION**
+
+### **Pre-commit Hooks**
+```bash
+#!/bin/bash
+# Run watchdog checks
+python -m watchdog.core.runner --pre-commit
+# Run tests
+pytest tests/unit/ -v
+# Check code quality
+black --check src/
+isort --check-only src/
+mypy src/
+```
+
+### **CI Pipeline**
+```yaml
+# .github/workflows/ci.yml
+name: Campaign Generator CI
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run Watchdog
+      run: python -m watchdog.core.runner --ci
+    - name: Run Tests
+      run: pytest tests/ --cov=campaign_generator --cov-report=xml
+    - name: Code Quality
+      run: |
+        black --check src/
+        isort --check-only src/
+        mypy src/
+```
+
+## 📝 **COMMIT MESSAGE STANDARDS**
+
+### **Format**
+```
+<type>(<scope>): <description>
+
+[optional body]
+
+[optional footer]
+```
+
+### **Types**
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation
+- `style`: Code style changes
+- `refactor`: Code refactoring
+- `test`: Testing
+- `chore`: Maintenance
+
+### **Examples**
+```
+feat(campaign): add preference-based generation
+fix(ai): handle Claude API timeout errors
+docs(api): update endpoint documentation
+test(watchdog): add AI integrity validation tests
+```
+
+## 🎯 **DEVELOPMENT WORKFLOW**
+
+### **Daily Development**
+1. **Pull latest changes**
+2. **Run watchdog pre-commit checks**
+3. **Make changes following cursor rules**
+4. **Run tests locally**
+5. **Commit with proper message format**
+6. **Push and create PR**
+
+### **Code Review Checklist**
+- [ ] Watchdog checks pass
+- [ ] Tests pass with >90% coverage
+- [ ] Code follows SOLID principles
+- [ ] No hardcoded AI prompts
+- [ ] No mock/fallback code
+- [ ] Proper error handling
+- [ ] Documentation updated
+
+### **Release Process**
+1. **Run full watchdog validation**
+2. **Run complete test suite**
+3. **Performance testing**
+4. **Security audit**
+5. **Create release branch**
+6. **Deploy to staging**
+7. **Production deployment**
+
+---
+
+**These rules ensure the Campaign Generator maintains the highest standards of quality, AI integrity, and architectural purity. The watchdog system enforces these rules at runtime, preventing any violations from compromising the system's reliability and effectiveness.**
+
+**Remember: Quality over speed. Clean architecture over quick fixes. Live AI over mock implementations.**
