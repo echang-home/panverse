@@ -1,0 +1,10 @@
+{
+  "levels": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "schools": ["abjuration", "conjuration", "divination", "enchantment", "evocation", "illusion", "necromancy", "transmutation"],
+  "casting_times": ["1 action", "1 bonus action", "1 reaction", "1 minute", "10 minutes", "1 hour", "8 hours", "12 hours", "24 hours"],
+  "ranges": ["5 feet", "10 feet", "15 feet", "20 feet", "25 feet", "30 feet", "40 feet", "50 feet", "60 feet", "70 feet", "80 feet", "90 feet", "100 feet", "120 feet", "150 feet", "300 feet", "500 feet", "1 mile", "5 miles", "10 miles", "100 miles", "500 miles", "Sight", "Touch", "Unlimited"],
+  "components": ["V", "S", "M", "V, S", "V, M", "S, M", "V, S, M"],
+  "durations": ["Instantaneous", "1 round", "1 minute", "10 minutes", "1 hour", "2 hours", "8 hours", "24 hours", "Concentration, up to 1 minute", "Concentration, up to 10 minutes", "Concentration, up to 1 hour", "Until dispelled"],
+  "required_fields": ["name", "level", "school", "casting_time", "range", "components", "duration", "description"],
+  "optional_fields": ["higher_level", "ritual", "concentration", "classes", "damage_type", "save_type"]
+}

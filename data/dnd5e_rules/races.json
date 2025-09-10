@@ -1,0 +1,16 @@
+{
+  "races": ["human", "elf", "dwarf", "halfling", "dragonborn", "tiefling", "half-elf", "half-orc", "gnome", "orc", "goblin", "hobgoblin", "kobold", "lizardfolk", "tabaxi", "kenku", "aasimar", "firbolg", "tortle", "triton", "yuan-ti"],
+  "subraces": {
+    "elf": ["high elf", "wood elf", "dark elf", "sea elf", "eladrin"],
+    "dwarf": ["hill dwarf", "mountain dwarf", "duergar"],
+    "halfling": ["lightfoot", "stout"],
+    "gnome": ["forest gnome", "rock gnome", "deep gnome"],
+    "orc": ["gray orc", "mountain orc"],
+    "tiefling": ["asalferond", "baalzebul", "dispater", "fierna", "glasya", "levistus", "mammon", "mephistopheles", "zariel"],
+    "half-elf": ["standard"],
+    "half-orc": ["standard"],
+    "dragonborn": ["black", "blue", "brass", "bronze", "copper", "gold", "green", "red", "silver", "white"]
+  },
+  "required_fields": ["name"],
+  "optional_fields": ["subrace", "age", "size", "speed", "languages", "traits", "ability_score_increases"]
+}

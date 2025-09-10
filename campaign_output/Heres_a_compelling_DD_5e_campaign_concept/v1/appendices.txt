@@ -1,0 +1,136 @@
+Here's a comprehensive set of appendices for your campaign:
+
+APPENDIX A: CHARACTER CREATION GUIDELINES
+• Level: Characters start at level 1
+• Method: Point buy or Standard Array (15,14,13,12,10,8)
+• Allowed Sources: 
+  - Player's Handbook (All content)
+  - Xanathar's Guide to Everything (All content)
+  - Tasha's Cauldron of Everything (All content except Peace/Twilight Clerics)
+• Starting Equipment: Standard class equipment OR starting gold per PHB
+• Background: Any official background plus custom (DM approval required)
+• Starting Gold: 2d4 × 10 gp in addition to starting equipment
+
+APPENDIX B: RULES CLARIFICATIONS
+• Rest Variants:
+  - Short Rest: 1 hour
+  - Long Rest: 8 hours (must be in safe location)
+  - Only 1 long rest per 24 hours
+• Encumbrance: Using simplified rules (PHB 176)
+• Death Saves: Hidden from players
+• Critical Hits: Roll damage dice twice
+• Inspiration: Awarded for good roleplay, clever solutions, heroic moments
+
+APPENDIX C: RANDOM ENCOUNTER TABLES
+
+Wilderness Encounters (d100):
+1-5: 1d4 Wolves
+6-10: 2d4 Bandits
+11-15: 1 Owlbear
+[Continue with appropriate encounters for environment/level]
+
+Urban Encounters (d100):
+1-5: Pickpocket attempt
+6-10: Street performance
+11-15: Guard patrol
+[Continue with appropriate urban encounters]
+
+APPENDIX D: TREASURE AND MAGIC ITEMS
+
+Common Items:
+• Potion of Healing (50 gp)
+• Scroll of Identify (100 gp)
+[Add more items with prices]
+
+Magic Item Tables (d100):
+Table A (Minor Items):
+1-5: Potion of Healing
+6-10: Scroll of Protection
+[Continue with balanced magic item tables]
+
+APPENDIX E: PLAYER HANDOUTS AND MAPS
+
+Available Handouts:
+1. World Map (Overview)
+2. Regional Map (Detailed)
+3. Major City Maps
+4. Faction Symbol Guide
+5. Common Knowledge Document
+6. Important NPC Portraits
+
+Required Props:
+• Faction symbols printed
+• Location-specific maps
+• Quest cards
+• NPC relationship chart
+
+APPENDIX F: CAMPAIGN TRACKING SHEETS
+
+Player Character Sheet:
+• Character Details
+• Quest Log
+• NPC Relationships
+• Inventory
+• Notes
+
+DM Campaign Tracker:
+• Session Log
+• NPC Status
+• Quest Status
+• Party Resources
+• Important Dates/Events
+
+Group Tracking Sheet:
+• Party Funds
+• Shared Resources
+• Base/Property Details
+• Faction Relationships
+
+APPENDIX G: HOUSE RULES
+
+1. Critical Role Initiative
+• Roll initiative at start of session
+• Keep same initiative order until long rest
+
+2. Drinking Healing Potions
+• Bonus action to drink
+• Action to administer to others
+
+3. Flanking
+• +2 to attack rolls (instead of advantage)
+
+4. Death and Resurrection
+• Three failed death saves = permanent death
+• Resurrection requires specific quest/components
+
+APPENDIX H: EXPERIENCE AND ADVANCEMENT
+
+Milestone Leveling:
+• Level 2: After first major quest
+• Level 3: After defeating first boss
+• Level 4: After solving major town problem
+[Continue with level progression goals]
+
+APPENDIX I: WEATHER AND TRAVEL
+
+Weather Table (d20):
+1-10: Clear
+11-15: Rain
+16-18: Heavy Rain
+19-20: Storm
+
+Travel Pace:
+• Fast: 30 miles/day (-5 passive perception)
+• Normal: 24 miles/day
+• Slow: 18 miles/day (able to stealth)
+
+APPENDIX J: DOWNTIME ACTIVITIES
+
+Available Activities:
+• Crafting (PHB rules)
+• Training new skills (250gp, 10 weeks)
+• Research (1gp/day)
+• Running a Business
+• Carousing
+
+These appendices should be updated as the campaign progresses and new content is added. Consider creating a player-facing version with only the information they need to know, keeping certain tables and information for DM use only.

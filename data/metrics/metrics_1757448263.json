@@ -1,0 +1,92 @@
+[
+  {
+    "metric_type": "token_usage",
+    "value": 1300,
+    "component": "claude",
+    "timestamp": 1757448233.219517,
+    "details": {
+      "timestamp": 1757448233.2195158
+    }
+  },
+  {
+    "metric_type": "api_latency",
+    "value": 16.106107234954834,
+    "component": "claude",
+    "timestamp": 1757448233.2195442,
+    "details": {
+      "timestamp": 1757448233.219543
+    }
+  },
+  {
+    "metric_type": "cost",
+    "value": 0.014772,
+    "component": "claude",
+    "timestamp": 1757448233.219554,
+    "details": {
+      "timestamp": 1757448233.219554
+    }
+  },
+  {
+    "metric_type": "error_rate",
+    "value": 0.0,
+    "component": "claude",
+    "timestamp": 1757448233.219809,
+    "details": {
+      "content_type": "campaign_content"
+    }
+  },
+  {
+    "metric_type": "token_usage",
+    "value": 1182,
+    "component": "claude",
+    "timestamp": 1757448247.176204,
+    "details": {
+      "timestamp": 1757448247.176192
+    }
+  },
+  {
+    "metric_type": "api_latency",
+    "value": 13.956024885177612,
+    "component": "claude",
+    "timestamp": 1757448247.176256,
+    "details": {
+      "timestamp": 1757448247.176255
+    }
+  },
+  {
+    "metric_type": "cost",
+    "value": 0.01281,
+    "component": "claude",
+    "timestamp": 1757448247.1762729,
+    "details": {
+      "timestamp": 1757448247.176272
+    }
+  },
+  {
+    "metric_type": "error_rate",
+    "value": 0.0,
+    "component": "claude",
+    "timestamp": 1757448247.176588,
+    "details": {
+      "content_type": "campaign_content"
+    }
+  },
+  {
+    "metric_type": "token_usage",
+    "value": 1243,
+    "component": "claude",
+    "timestamp": 1757448263.81891,
+    "details": {
+      "timestamp": 1757448263.8189042
+    }
+  },
+  {
+    "metric_type": "api_latency",
+    "value": 16.641780853271484,
+    "component": "claude",
+    "timestamp": 1757448263.818953,
+    "details": {
+      "timestamp": 1757448263.818953
+    }
+  }
+]

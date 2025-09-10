@@ -1,0 +1,9 @@
+{
+  "rarities": ["common", "uncommon", "rare", "very rare", "legendary", "artifact"],
+  "types": ["weapon", "armor", "shield", "tool", "wand", "staff", "potion", "scroll", "ring", "amulet", "cloak", "robe", "boots", "gloves", "hat", "belt", "gem", "treasure", "miscellaneous"],
+  "required_fields": ["name", "type", "description"],
+  "optional_fields": ["rarity", "value", "weight", "attunement", "attunement_requirements", "damage", "damage_type", "armor_class", "strength_requirement", "properties"],
+  "attunement_keywords": ["requires attunement", "attunement", "attuned"],
+  "currency_types": ["cp", "sp", "ep", "gp", "pp"],
+  "damage_types": ["acid", "bludgeoning", "cold", "fire", "force", "lightning", "necrotic", "piercing", "poison", "psychic", "radiant", "slashing", "thunder"]
+}

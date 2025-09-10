@@ -1,0 +1,19 @@
+{
+  "classes": ["barbarian", "bard", "cleric", "druid", "fighter", "monk", "paladin", "ranger", "rogue", "sorcerer", "warlock", "wizard"],
+  "subclasses": {
+    "barbarian": ["Berserker", "Totem Warrior", "Ancestral Guardian", "Storm Herald", "Zealot", "Wild Magic"],
+    "bard": ["College of Lore", "College of Valor", "College of Swords", "College of Glamour", "College of Whispers", "College of Creation"],
+    "cleric": ["Knowledge Domain", "Life Domain", "Light Domain", "Nature Domain", "Tempest Domain", "Trickery Domain", "War Domain", "Forge Domain", "Grave Domain", "Peace Domain", "Twilight Domain", "Order Domain", "Cannon Domain"],
+    "druid": ["Circle of the Land", "Circle of the Moon", "Circle of the Shepherd", "Circle of Spores", "Circle of Stars", "Circle of Wildfire"],
+    "fighter": ["Champion", "Battle Master", "Eldritch Knight", "Arcane Archer", "Cavalier", "Samurai", "Gunslinger", "Purple Dragon Knight", "Rune Knight", "Echo Knight"],
+    "monk": ["Way of the Open Hand", "Way of Shadow", "Way of the Four Elements", "Way of the Kensei", "Way of the Drunken Master", "Way of the Sun Soul", "Way of Mercy", "Way of the Astral Self"],
+    "paladin": ["Oath of Devotion", "Oath of the Ancients", "Oath of Vengeance", "Oath of the Crown", "Oath of Conquest", "Oath of Redemption", "Oath of the Watchers"],
+    "ranger": ["Hunter", "Beast Master", "Gloom Stalker", "Horizon Walker", "Monster Slayer", "Fey Wanderer", "Swarmkeeper"],
+    "rogue": ["Thief", "Assassin", "Arcane Trickster", "Mastermind", "Swashbuckler", "Inquisitive", "Scout", "Soulknife", "Phantom", "Revived"],
+    "sorcerer": ["Draconic Bloodline", "Wild Magic", "Divine Soul", "Shadow Magic", "Storm Sorcery", "Phoenix Sorcery", "Aberrant Mind", "Clockwork Soul"],
+    "warlock": ["The Archfey", "The Fiend", "The Great Old One", "The Hexblade", "The Undying", "The Celestial", "The Undead"],
+    "wizard": ["School of Abjuration", "School of Conjuration", "School of Divination", "School of Enchantment", "School of Evocation", "School of Illusion", "School of Necromancy", "School of Transmutation", "School of Invention", "Bladesinging", "Chronurgy", "Graviturgy", "Order of Scribes"]
+  },
+  "required_fields": ["name"],
+  "optional_fields": ["subclass", "level", "background", "alignment", "personality", "backstory"]
+}

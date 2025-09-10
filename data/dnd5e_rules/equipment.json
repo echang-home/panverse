@@ -1,0 +1,9 @@
+{
+  "weapon_types": ["simple", "martial", "ranged", "melee", "finesse", "heavy", "light", "loading", "reach", "thrown", "two-handed", "versatile"],
+  "armor_types": ["light", "medium", "heavy", "shield"],
+  "tool_types": ["artisan's tools", "gaming set", "instrument", "vehicle"],
+  "damage_types": ["acid", "bludgeoning", "cold", "fire", "force", "lightning", "necrotic", "piercing", "poison", "psychic", "radiant", "slashing", "thunder"],
+  "properties": ["ammunition", "finesse", "heavy", "light", "loading", "reach", "thrown", "two-handed", "versatile"],
+  "required_fields": ["name", "type"],
+  "optional_fields": ["damage", "damage_type", "weight", "cost", "properties", "description"]
+}

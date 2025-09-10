@@ -1,0 +1,15 @@
+{
+  "difficulties": ["easy", "medium", "hard", "deadly"],
+  "party_sizes": ["solo", "duo", "small", "medium", "large"],
+  "durations": ["one_shot", "short", "medium", "long", "epic"],
+  "themes": ["fantasy", "horror", "mystery", "exploration", "political_intrigue", "war", "supernatural", "custom"],
+  "settings": ["medieval_fantasy", "dark_fantasy", "high_fantasy", "urban_fantasy", "post_apocalyptic", "steampunk", "cyberpunk"],
+  "hook_types": ["personal", "mysterious", "threatening", "opportunity", "cosmic"],
+  "location_types": ["city", "town", "village", "dungeon", "forest", "mountain", "desert", "coast", "underwater", "planar"],
+  "encounter_types": ["social", "combat", "exploration", "puzzle"],
+  "condition_types": ["blinded", "charmed", "deafened", "frightened", "grappled", "incapacitated", "invisible", "paralyzed", "petrified", "poisoned", "prone", "restrained", "stunned", "unconscious"],
+  "skill_types": ["acrobatics", "animal_handling", "arcana", "athletics", "deception", "history", "insight", "intimidation", "investigation", "medicine", "nature", "perception", "performance", "persuasion", "religion", "sleight_of_hand", "stealth", "survival"],
+  "level_range": [1, 20],
+  "required_fields": ["name", "description"],
+  "optional_fields": ["difficulty", "level_range", "party_size", "duration", "theme", "setting", "notes"]
+}

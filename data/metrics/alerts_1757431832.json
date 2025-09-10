@@ -1,0 +1,27 @@
+[
+  {
+    "message": "Content verification failed for monster",
+    "severity": "warning",
+    "source": "claude",
+    "timestamp": 1757431832.5843682,
+    "details": {
+      "issues": [
+        "Fallback phrase detected: 'I'm sorry, I cannot'",
+        "Fallback phrase detected: 'I cannot generate'",
+        "Monster content format validation failed"
+      ],
+      "content_type": "monster"
+    },
+    "resolved": false
+  },
+  {
+    "message": "Low quality score for location_generation: 0.35",
+    "severity": "warning",
+    "source": "quality_checker",
+    "timestamp": 1757431832.5853498,
+    "details": {
+      "location_type": "dungeon"
+    },
+    "resolved": false
+  }
+]

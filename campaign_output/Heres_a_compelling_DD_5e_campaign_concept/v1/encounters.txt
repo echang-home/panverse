@@ -1,0 +1,109 @@
+I'll help design balanced encounters for "Echoes of the Frost Throne" that can be scaled appropriately.
+
+MAJOR COMBAT ENCOUNTERS
+
+1. Frost Giant Patrol (CR 8)
+- 1 Frost Giant (CR 8)
+- 2 Winter Wolves (CR 3)
+Scaling: 
+- 4 players: As listed
+- 5-6 players: Add 1 Winter Wolf
+- 3 players: Remove 1 Winter Wolf
+XP: 3,900 base
+
+2. Ancient Ice Tomb Guards (CR 10)
+- 1 Helmed Horror (CR 4) 
+- 2 Ice Mephits (CR 1/2)
+- 1 Animated Ice Armor (use Stone Golem stats with cold damage, CR 10)
+Scaling:
+- 4 players: As listed
+- 5-6 players: Add 2 Ice Mephits
+- 3 players: Remove Helmed Horror
+XP: 5,800 base
+
+SOCIAL ENCOUNTERS
+
+1. Frost Giant Diplomatic Summit
+Key NPCs:
+- Jarl Rimefist (Proud but reasonable frost giant chieftain)
+- Glacier Witch Morozna (Mysterious human ice mage)
+Objectives: 
+- Negotiate safe passage through giant territory
+- Gain information about the Frost Throne
+DC Guidelines:
+- DC 15 Persuasion to gain basic trust
+- DC 18 Insight to detect underlying motives
+- DC 20 Intimidation to demand cooperation
+
+2. Ice Dwarf Trading Post
+Key NPCs:
+- Torgin Frostbeard (Dwarf merchant)
+- Sister Crystalline (Cleric of winter gods)
+Opportunities:
+- Purchase cold weather gear
+- Learn local legends
+- Find mountain guides
+
+TRAPS & PUZZLES
+
+1. Crystalline Bridge Puzzle
+- 30ft ice bridge over 200ft chasm
+- Pressure plates activate ice spikes
+- Solution: Cross in specific pattern following rune sequence
+- Failed check: 3d6 cold damage
+- DC 15 Investigation to study pattern
+- DC 13 Acrobatics to navigate
+
+2. Frozen Time Trap
+- Ancient magic freezes victims in temporal ice
+- DC 16 Perception to spot trigger runes
+- DC 15 Arcana to disarm
+- Failed save: Paralyzed 1d4 rounds, 4d8 cold damage
+
+TREASURE & REWARDS
+
+Tier 1 (Levels 1-4):
+- Frost-Touched Weapons (+1, extra 1d4 cold damage)
+- Potions of Cold Resistance
+- 200-500 gp per major encounter
+
+Tier 2 (Levels 5-10):
+- Ring of Winter Walking
+- Frost Giant Crafted Armor (+1 AC, resistance to cold)
+- 1000-2500 gp per major encounter
+
+ENVIRONMENTAL CHALLENGES
+
+1. Bitter Wind Zones
+- DC 13 Constitution saves every hour
+- Failure: 1 level of exhaustion
+- Requires proper gear or magic protection
+- Strong winds impose disadvantage on ranged attacks
+
+2. Treacherous Ice Fields
+- DC 15 Acrobatics to move at full speed
+- Failure: Fall prone and slide 1d6×5 feet
+- Difficult terrain without proper equipment
+- Hidden crevasses (DC 16 Perception)
+
+SCALING GUIDELINES
+
+Party Size Adjustments:
+3 players:
+- Reduce monster HP by 25%
+- Remove secondary enemies
+- Provide additional healing resources
+
+5-6 players:
+- Add 25% HP to bosses
+- Include additional minor enemies
+- Increase DCs by 1-2
+- Add environmental hazards
+
+Level Adjustments:
+- Below level 5: Remove legendary actions
+- Above level 8: Add legendary resistances
+- Adjust trap damage by ±1d6 per level difference
+- Scale social DC checks ±2 per tier difference
+
+Remember to adjust these encounters based on your party's specific composition and play style. Monitor the challenge level and be ready to scale up or down during play.

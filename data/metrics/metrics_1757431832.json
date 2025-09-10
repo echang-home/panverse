@@ -1,0 +1,106 @@
+[
+  {
+    "metric_type": "token_usage",
+    "value": 1200,
+    "component": "claude",
+    "timestamp": 1757431832.58431,
+    "details": {
+      "timestamp": 1757431832.58431
+    }
+  },
+  {
+    "metric_type": "api_latency",
+    "value": 3.2,
+    "component": "claude",
+    "timestamp": 1757431832.584317,
+    "details": {
+      "timestamp": 1757431832.584317
+    }
+  },
+  {
+    "metric_type": "cost",
+    "value": 0.024,
+    "component": "claude",
+    "timestamp": 1757431832.584322,
+    "details": {
+      "timestamp": 1757431832.584322
+    }
+  },
+  {
+    "metric_type": "token_usage",
+    "value": 800,
+    "component": "chatgpt",
+    "timestamp": 1757431832.584329,
+    "details": {
+      "timestamp": 1757431832.584329
+    }
+  },
+  {
+    "metric_type": "api_latency",
+    "value": 2.1,
+    "component": "chatgpt",
+    "timestamp": 1757431832.584331,
+    "details": {
+      "timestamp": 1757431832.584331
+    }
+  },
+  {
+    "metric_type": "cost",
+    "value": 0.016,
+    "component": "chatgpt",
+    "timestamp": 1757431832.584333,
+    "details": {
+      "timestamp": 1757431832.584333
+    }
+  },
+  {
+    "metric_type": "error_rate",
+    "value": 0.0,
+    "component": "claude",
+    "timestamp": 1757431832.584353,
+    "details": {
+      "content_type": "monster"
+    }
+  },
+  {
+    "metric_type": "error_rate",
+    "value": 1.0,
+    "component": "claude",
+    "timestamp": 1757431832.5843651,
+    "details": {
+      "issues": [
+        "Fallback phrase detected: 'I'm sorry, I cannot'",
+        "Fallback phrase detected: 'I cannot generate'",
+        "Monster content format validation failed"
+      ],
+      "content_type": "monster"
+    }
+  },
+  {
+    "metric_type": "quality_score",
+    "value": 0.87,
+    "component": "campaign_generation",
+    "timestamp": 1757431832.5844202,
+    "details": {
+      "campaign_id": "demo-123"
+    }
+  },
+  {
+    "metric_type": "quality_score",
+    "value": 0.92,
+    "component": "npc_generation",
+    "timestamp": 1757431832.584425,
+    "details": {
+      "npc_count": 3
+    }
+  },
+  {
+    "metric_type": "quality_score",
+    "value": 0.35,
+    "component": "location_generation",
+    "timestamp": 1757431832.585346,
+    "details": {
+      "location_type": "dungeon"
+    }
+  }
+]

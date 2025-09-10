@@ -1,0 +1,43 @@
+{
+  "title": "Generated D&D 5e Campaign",
+  "generated_at": "2025-09-09T15:59:04.893109",
+  "sections": [
+    {
+      "name": "Campaign Concept",
+      "file": "campaign_concept.txt",
+      "size": 2037
+    },
+    {
+      "name": "World Description",
+      "file": "world_description.txt",
+      "size": 3697
+    },
+    {
+      "name": "Plot Summary",
+      "file": "plot_summary.txt",
+      "size": 3440
+    },
+    {
+      "name": "Key NPCs",
+      "file": "key_npcs.txt",
+      "size": 3827
+    },
+    {
+      "name": "Key Locations",
+      "file": "key_locations.txt",
+      "size": 3574
+    },
+    {
+      "name": "Encounters",
+      "file": "encounters.txt",
+      "size": 3043
+    },
+    {
+      "name": "Appendices",
+      "file": "appendices.txt",
+      "size": 3464
+    }
+  ],
+  "images_generated": 0,
+  "total_content_length": 23082
+}

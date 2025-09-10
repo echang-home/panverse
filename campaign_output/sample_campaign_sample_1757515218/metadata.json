@@ -1,0 +1,13 @@
+{
+  "campaign_id": "sample_1757515218",
+  "generated_at": "2025-09-10T10:40:18.495220",
+  "theme": "epic_fantasy",
+  "difficulty": "medium",
+  "party_size": "small",
+  "starting_level": 3,
+  "duration": "medium",
+  "mode": "sample",
+  "ai_model": "claude-3-5-sonnet",
+  "word_count": 447,
+  "sections": 10
+}
